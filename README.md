@@ -41,7 +41,7 @@ This repository is shared for transparency and citability rather than as an open
 
 ## Citing this work
 
-> Moreno, M. (2026). *Reversible Ageing: Targets, Therapies and the Dilemmas of Healthy Longevity*. Zenodo. https://doi.org/10.5281/zenodo.20745513
+> Moreno-Muñoz, M. (2026). *Reversible Ageing: Targets, Therapies and the Dilemmas of Healthy Longevity*. Zenodo. https://doi.org/10.5281/zenodo.20745513
 
 ```bibtex
 @book{moreno2026rev,
