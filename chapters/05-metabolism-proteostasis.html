@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="A scholarly monograph on the cellular and molecular mechanisms of ageing, current rejuvenation strategies, and their clinical, societal and philosophical implications.">
+<title>5&nbsp; Metabolism, Proteostasis and Autophagy – Reversible Ageing</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/06-dietary-restriction.html" rel="next">
+<link href="../chapters/04-telomeres-senescence.html" rel="prev">
+<link href="../site-assets/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-f5ca7dff53b0122084cd2eef953bd360.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-be193c82108ba13746fc21c48cef8a05.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1eadf2c00696b60f4916a9119adea4b9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-66c2e7377f5ac0a62ce9fcd580ec45bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><style>html{ scroll-behavior: smooth; }</style>
+<!-- Reversible Ageing — cabecera HTML compartida por todas las páginas del libro.
+     Se inyecta vía format.html.include-in-header en _quarto.yml.
+     Las rutas de iconos usan URL absoluta (site-url + ruta) a propósito: GitHub Pages
+     despliega el sitio bajo un subdirectorio (https://utilizas.github.io/ageing/), de modo
+     que una ruta relativa o "site-absolute" (que empiece por "/") se resolvería de forma
+     distinta según la profundidad de cada capítulo. La URL completa es robusta en todos los casos. --><!-- Icono para el "home screen" de iOS (Apple no reescribe rutas relativas en bloques crudos) --><link rel="apple-touch-icon" sizes="180x180" href="https://utilizas.github.io/ageing/site-assets/apple-touch-icon.png">
+<!-- Color de la barra de navegador en Android/Chrome --><meta name="theme-color" content="#1b1e25">
+<!-- Tipografías (bloque ya existente, trasladado aquí para tener una única cabecera canónica) --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&amp;family=Source+Sans+3:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<meta property="og:title" content="5&nbsp; Metabolism, Proteostasis and Autophagy – Reversible Ageing">
+<meta property="og:description" content="A scholarly monograph on the cellular and molecular mechanisms of ageing, current rejuvenation strategies, and their clinical, societal and philosophical implications.">
+<meta property="og:image" content="https://utilizas.github.io/ageing/chapters/05-metabolism-proteostasis_files/figure-html/fig-autophagy-fasting-1.svg">
+<meta property="og:site_name" content="Reversible Ageing">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:title" content="5&nbsp; Metabolism, Proteostasis and Autophagy – Reversible Ageing">
+<meta name="twitter:description" content="A scholarly monograph on the cellular and molecular mechanisms of ageing, current rejuvenation strategies, and their clinical, societal and philosophical implications.">
+<meta name="twitter:image" content="https://utilizas.github.io/ageing/chapters/05-metabolism-proteostasis_files/figure-html/fig-autophagy-fasting-1.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="nav-sidebar floating quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/03-epigenetics-clocks.html">Part II — Mechanisms and Targets</a></li><li class="breadcrumb-item"><a href="../chapters/05-metabolism-proteostasis.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Metabolism, Proteostasis and Autophagy</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Reversible Ageing</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/utilizas/ageing" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">List of Abbreviations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../list-of-figures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">List of Figures, Tables and Boxes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I — The Biology of Ageing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-what-is-ageing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is Ageing? From Phenomenon to Biology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-hallmarks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Hallmarks of Ageing: An Expanding Framework</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II — Mechanisms and Targets</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-epigenetics-clocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Epigenetics, Ageing Clocks and the Information Theory of Ageing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-telomeres-senescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Telomeres, Cellular Senescence and Inflammageing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-metabolism-proteostasis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Metabolism, Proteostasis and Autophagy</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III — Therapeutic Strategies</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-dietary-restriction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Dietary Restriction and Its Mimetics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-senolytics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Senolytics and Senomorphics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-reprogramming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Reprogramming: Reversing Cellular Age</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-stem-cells-regenerative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Stem Cells, Tissue Engineering and Regenerative Medicine</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV — From Bench to Bedside</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-biomarkers-trials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Biomarkers, Ageing Clocks and the Design of Longevity Trials</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-hype-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Hype and Evidence: Paradigms Under Revision</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V — Ageing, Society and the Human Condition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-demography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Ageing of Populations: Demography, Disease Burden and Health Systems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-economics-justice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Economics and Politics of Longevity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">The Ethics of Intervening in Ageing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-philosophy-enhancement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Finitude Renegotiated: Ageing, Enhancement and the Human Condition</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../epilogue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Epilogue</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#sec-nutrient-sensing" id="toc-sec-nutrient-sensing" class="nav-link active" data-scroll-target="#sec-nutrient-sensing"><span class="header-section-number">5.1</span> The nutrient-sensing network</a></li>
+  <li><a href="#nad-sirtuins-and-the-mitochondrial-connection" id="toc-nad-sirtuins-and-the-mitochondrial-connection" class="nav-link" data-scroll-target="#nad-sirtuins-and-the-mitochondrial-connection"><span class="header-section-number">5.2</span> NAD⁺, sirtuins and the mitochondrial connection</a></li>
+  <li><a href="#sec-proteostasis" id="toc-sec-proteostasis" class="nav-link" data-scroll-target="#sec-proteostasis"><span class="header-section-number">5.3</span> Proteostasis and its collapse</a></li>
+  <li><a href="#sec-autophagy" id="toc-sec-autophagy" class="nav-link" data-scroll-target="#sec-autophagy"><span class="header-section-number">5.4</span> Autophagy: the cell’s renewal</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/03-epigenetics-clocks.html">Part II — Mechanisms and Targets</a></li><li class="breadcrumb-item"><a href="../chapters/05-metabolism-proteostasis.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Metabolism, Proteostasis and Autophagy</span></a></li></ol></nav><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Metabolism, Proteostasis and Autophagy</span>
+</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header><div class="standfirst">
+<p>The previous chapter asked what feeds the decay of telomeres, the tipping of cells into senescence and the slow fire of inflammation. The answer lies inward, in the cell’s economy: how it reads the availability of food, how it keeps its proteins correctly folded, and how it recycles its own worn parts. This chapter sets out that machinery — the nutrient-sensing network, the proteostasis system and autophagy — and shows that it is not merely where ageing is suffered but where the oldest and most reproducible of all interventions does its work, which is why it is the hinge between the mechanisms of Part I–II and the therapies of Part III.</p>
+</div>
+<div class="chapter-lead">
+<p>Almost everything that reliably slows ageing in a laboratory animal — eating less, eating less often, the drug rapamycin, perhaps metformin — converges on a single network that tells the cell whether to grow or to maintain itself. Understanding that switch, and the housekeeping it governs, is the prerequisite for understanding every dietary and pharmacological strategy that follows.</p>
+</div>
+<p>The hallmarks of this chapter belong to different tiers of the framework — deregulated nutrient-sensing and mitochondrial dysfunction are antagonistic, loss of <a href="../glossary.html#gloss-proteostasis" class="gloss">proteostasis</a> is primary, and disabled macroautophagy was added as a hallmark only in 2023 — but they form one functional system <span class="citation" data-cites="lopezotin2023">(<a href="../references.html#ref-lopezotin2023" role="doc-biblioref">López-Otín et al., 2023</a>)</span>. Nutrient-sensing decides between building and maintaining; autophagy and proteostasis are how the cell maintains; and the whole is powered by mitochondria and the metabolic cofactors that link energy to information. The recurring lesson of Chapter 4 returns here in its sharpest form: the very signalling that builds a young body is, prolonged into later life, among the things that age it.</p>
+<section id="sec-nutrient-sensing" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="sec-nutrient-sensing">
+<span class="header-section-number">5.1</span> The nutrient-sensing network</h2>
+<p>Cells must constantly decide whether conditions favour growth or call for thrift, and they make that decision through a small, deeply conserved network of nutrient sensors <span class="citation" data-cites="lopezotin2016">(<a href="../references.html#ref-lopezotin2016" role="doc-biblioref">López-Otín et al., 2016</a>)</span>. Four arms dominate it. The <a href="../glossary.html#gloss-iis" class="gloss">insulin and IGF-1 signalling</a> (IIS) pathway reports the presence of glucose and growth signals. <a href="../glossary.html#gloss-mtor" class="gloss">mTORC1</a> — the target of rapamycin — integrates amino-acid abundance and cellular energy to drive protein synthesis, ribosome and mitochondrial biogenesis, and to <em>switch off</em> autophagy. Opposing them, <a href="../glossary.html#gloss-ampk" class="gloss">AMPK</a> is tripped by a falling energy charge (a rising AMP-to-ATP ratio) and the <a href="../glossary.html#gloss-sirtuin" class="gloss">sirtuins</a> respond to the metabolic cofactor NAD⁺; both are activated by scarcity and both push the cell towards catabolism, stress defence and repair. The network’s logic is therefore an axis: nutrients and growth signals tilt it towards anabolism through IIS and mTORC1; scarcity tilts it towards maintenance through AMPK and the sirtuins <span class="citation" data-cites="lopezotin2016">(<a href="../references.html#ref-lopezotin2016" role="doc-biblioref">López-Otín et al., 2016</a>)</span>.</p>
+<p>The longevity evidence is among the most robust in the whole field, and it points in a consistent direction: <em>less</em> anabolic signalling means longer life. Genetically reducing IIS or mTOR activity extends lifespan from yeast to nematodes to mice; activating AMPK or the sirtuins does likewise <span class="citation" data-cites="lopezotin2016 kennedy2014">(<a href="../references.html#ref-kennedy2014" role="doc-biblioref">Kennedy et al., 2014</a>; <a href="../references.html#ref-lopezotin2016" role="doc-biblioref">López-Otín et al., 2016</a>)</span>. The pattern reaches into our own species — variants in the <em>FOXO3</em> transcription factor, a downstream effector of reduced IIS, are among the most reproducible genetic associations with human longevity, recurring in centenarian studies from Hawaii to Germany to China <span class="citation" data-cites="willcox2008">(<a href="../references.html#ref-willcox2008" role="doc-biblioref">Willcox et al., 2008</a>)</span>. And the most recent work has begun to set these pathways within an integrated, multi-level and increasingly <em>reversible</em> picture of ageing, rather than a static catalogue of decline: a 2026 cross-species transcriptomic atlas resolved ageing into distinct molecular modules and found that lifespan-extending manoeuvres such as caloric restriction and rapamycin imprint a detectable — and partly reversible — signature on the metabolic module itself <span class="citation" data-cites="tyshkovskiy2026">(<a href="../references.html#ref-tyshkovskiy2026" role="doc-biblioref">Tyshkovskiy et al., 2026</a>)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Key concept — deregulated nutrient-sensing as antagonistic pleiotropy">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Key concept — deregulated nutrient-sensing as antagonistic pleiotropy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Why would evolution build a network whose activity shortens life? Because in youth it does the opposite. Vigorous anabolic signalling through IIS and mTORC1 is exactly what builds a body — growth, maturation, reproduction — and selection acts overwhelmingly on those early decades. The same signalling sustained into later life, when it is no longer building anything, becomes pro-ageing: it suppresses the maintenance programmes the old cell needs and feeds the inflammation and senescence of Chapter 4. This is Williams’s antagonistic pleiotropy from Chapter 1, made molecular <span class="citation" data-cites="williams1957">(<a href="../references.html#ref-williams1957" role="doc-biblioref">Williams, 1957</a>)</span>. It also frames the therapeutic problem precisely: the goal is not to abolish these pathways, which would cripple a young body, but to <em>turn them down</em> in the second half of life.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Analogy — the accelerator and the brake">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Analogy — the accelerator and the brake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Picture the network as a car with mTORC1 as the accelerator and AMPK as the brake, and food as the foot on the pedals. A meal presses the accelerator: build, divide, store. Fasting lifts off and presses the brake: coast, conserve, repair the engine. A young car spends much of its time accelerating, and should. The trouble of modern ageing is a foot that rarely leaves the accelerator — a constant supply of food keeping mTORC1 high and the maintenance systems idling — so the engine is never serviced. Dietary restriction, and the drugs that mimic it, are ways of easing off the accelerator or tapping the brake; the rest of this chapter is about what the servicing actually consists of.</p>
+</div>
+</div>
+<p><a href="#tbl-nutrient-sensing" class="quarto-xref">Table&nbsp;<span>5.1</span></a> sets out the four arms and the pharmacological handles that act on each — handles whose clinical evaluation is the subject of Chapter 6. Two deserve mention now because they anchor the evidence. Rapamycin, an mTOR inhibitor, extends the lifespan of genetically heterogeneous mice even when begun late in life, the first drug shown to do so in a mammal <span class="citation" data-cites="harrison2009">(<a href="../references.html#ref-harrison2009" role="doc-biblioref">Harrison et al., 2009</a>)</span>; metformin, which activates AMPK among other actions, attenuates several hallmarks at once and is the first drug to enter a dedicated human ageing trial <span class="citation" data-cites="kulkarni2020">(<a href="../references.html#ref-kulkarni2020" role="doc-biblioref">Kulkarni et al., 2020</a>)</span>. They are the proof that the network is not merely descriptive but <em>druggable</em> <span class="citation" data-cites="partridge2020">(<a href="../references.html#ref-partridge2020" role="doc-biblioref">Partridge et al., 2020</a>)</span>. The translation to humans is recent and sobering: the first randomised, placebo-controlled trial of intermittent rapamycin in healthy older adults found it broadly safe across a year, with modest gains in lean mass and well-being but nothing resembling wholesale rejuvenation — an honest early measure of the distance between a mouse result and a human one <span class="citation" data-cites="pearl2025">(<a href="../references.html#ref-pearl2025" role="doc-biblioref">Moel et al., 2025</a>)</span>.</p>
+<div id="tbl-nutrient-sensing" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure"><figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-nutrient-sensing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.1: The four arms of the nutrient-sensing network. Anabolic arms (IIS, mTORC1) and catabolic arms (AMPK, sirtuins) form an axis; longevity interventions consistently push it towards the catabolic, maintenance side.
+</figcaption><div aria-describedby="tbl-nutrient-sensing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead><tr class="header">
+<th>Pathway</th>
+<th>Principal cue sensed</th>
+<th>Longevity-promoting direction</th>
+<th>Pharmacological handle</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Insulin/IGF-1 signalling (IIS)</td>
+<td>Glucose, growth signals</td>
+<td>Reduced signalling</td>
+<td>(largely genetic; dietary)</td>
+</tr>
+<tr class="even">
+<td>mTORC1</td>
+<td>Amino acids, energy</td>
+<td>Inhibition</td>
+<td>Rapamycin (→ Ch. 6)</td>
+</tr>
+<tr class="odd">
+<td>AMPK</td>
+<td>Low energy (high AMP:ATP)</td>
+<td>Activation</td>
+<td>Metformin (→ Ch. 6)</td>
+</tr>
+<tr class="even">
+<td>Sirtuins (SIRT1–7)</td>
+<td>NAD⁺ availability</td>
+<td>Activation</td>
+<td>NAD⁺ precursors (→ Ch. 6)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The cell-level picture has a tissue-level counterpart: ageing adipose progressively loses metabolic flexibility and becomes an active driver of systemic metabolic decline, amplifying the deregulation at every downstream level <span class="citation" data-cites="lin2026fromfat wang2025adip">(<a href="../references.html#ref-lin2026fromfat" role="doc-biblioref">Lin et al., 2026</a>; <a href="../references.html#ref-wang2025adip" role="doc-biblioref">Wang et al., 2025</a>)</span>.</p>
+</section><section id="nad-sirtuins-and-the-mitochondrial-connection" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="nad-sirtuins-and-the-mitochondrial-connection">
+<span class="header-section-number">5.2</span> NAD⁺, sirtuins and the mitochondrial connection</h2>
+<p>One arm of that network doubles as a window onto the cell’s power supply. The sirtuins act only when supplied with <a href="../glossary.html#gloss-nad" class="gloss">NAD⁺</a> (nicotinamide adenine dinucleotide), a cofactor that is both a carrier of electrons in energy metabolism and a substrate consumed by the sirtuins, by the DNA-repair enzymes known as PARPs, and by the enzyme CD38 <span class="citation" data-cites="covarrubias2021">(<a href="../references.html#ref-covarrubias2021" role="doc-biblioref">Covarrubias et al., 2021</a>)</span>. Because NAD⁺ sits at this crossroads, its level is a readout of metabolic state — and, with age, that level falls. A decline in tissue NAD⁺ with age is well documented in rodents — though, as recent appraisals stress, the human evidence is thinner and less consistent than the rodent data are sometimes taken to imply <span class="citation" data-cites="migaud2024">(<a href="../references.html#ref-migaud2024" role="doc-biblioref">Migaud et al., 2024</a>)</span> — and because the sirtuins depend on it, any such decline propagates into weaker DNA repair, drifting chromatin, more readily triggered senescence and faltering mitochondrial quality control <span class="citation" data-cites="covarrubias2021">(<a href="../references.html#ref-covarrubias2021" role="doc-biblioref">Covarrubias et al., 2021</a>)</span>. Tellingly, the most recent work has shifted from cataloguing this decline to asking whether <em>reversing</em> it restores function: in animal models several NAD⁺-dependent deficits can be not merely slowed but reversed by restoring the cofactor <span class="citation" data-cites="covarrubias2021">(<a href="../references.html#ref-covarrubias2021" role="doc-biblioref">Covarrubias et al., 2021</a>)</span> — a non-trivial change of ambition, even where the human translation still lags.</p>
+<p>That last consequence connects this chapter to the hallmark of mitochondrial dysfunction. Mitochondria are not merely the cell’s power stations; through the sirtuins and the regulator PGC-1α they are wired into the nutrient-sensing network, and their decline with age — reduced respiratory efficiency, accumulation of damaged organelles, a slackening of the <a href="../glossary.html#gloss-mitophagy" class="gloss">mitophagy</a> that culls them — both reflects and worsens the metabolic shift <span class="citation" data-cites="lopezotin2016">(<a href="../references.html#ref-lopezotin2016" role="doc-biblioref">López-Otín et al., 2016</a>)</span>. Like senescence, mitochondrial signalling is double-edged: a modest, transient rise in mitochondrial stress can be protective, a phenomenon termed <a href="../glossary.html#gloss-mitohormesis" class="gloss">mitohormesis</a>, which is one reason blunt “antioxidant” strategies have so often disappointed. Expanding this picture, recent work identifies peroxisomes as active orchestrators of metabolic flexibility and longevity through inter-organelle signalling cascades, adding a layer to the metabolic network of ageing that the sirtuin–mitochondria axis alone does not capture <span class="citation" data-cites="sharma2026perox">(<a href="../references.html#ref-sharma2026perox" role="doc-biblioref">Sharma et al., 2026</a>)</span>.</p>
+<p>The therapeutic temptation is obvious: if NAD⁺ falls, restore it. Precursors such as nicotinamide riboside (NR) and nicotinamide mononucleotide (NMN)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> raise NAD⁺ in tissues and improve healthspan measures in mice, and the mitophagy-inducing compound urolithin A has improved muscle endurance in human trials <span class="citation" data-cites="migaud2024">(<a href="../references.html#ref-migaud2024" role="doc-biblioref">Migaud et al., 2024</a>)</span>. In people, however, the picture is more equivocal than the preclinical enthusiasm implies, and turning a raised NAD⁺ marker into a clinical benefit remains the central unsolved problem <span class="citation" data-cites="vinten2025nad">(<a href="../references.html#ref-vinten2025nad" role="doc-biblioref">Vinten et al., 2025</a>)</span>. But this is precisely the kind of claim this work examines with some scepticism.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Caveat — the NAD⁺ gap between mouse and marketing">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Caveat — the NAD⁺ gap between mouse and marketing
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>NAD⁺ precursors are sold as supplements on a wave of genuine but largely preclinical science. The animal data are real; the human data are thin. A careful appraisal of what is actually established about nicotinamide riboside in people concludes that, while supplementation reliably raises NAD⁺ markers in blood, robust clinical benefits on the outcomes that matter — function, disease, lifespan — remain to be demonstrated <span class="citation" data-cites="vinten2025nad damgaard2023">(<a href="../references.html#ref-damgaard2023" role="doc-biblioref">Damgaard &amp; Treebak, 2023</a>; <a href="../references.html#ref-vinten2025nad" role="doc-biblioref">Vinten et al., 2025</a>)</span>. The lesson generalises, and the book returns to it in <a href="11-hype-evidence.html#sec-hype" class="quarto-xref"><span>Section 11.1</span></a>: that a molecule declines with age, and that restoring it helps a mouse, is a hypothesis about humans, not a result in them. A raised biomarker is not a longer life.</p>
+</div>
+</div>
+</section><section id="sec-proteostasis" class="level2" data-number="5.3"><h2 data-number="5.3" class="anchored" data-anchor-id="sec-proteostasis">
+<span class="header-section-number">5.3</span> Proteostasis and its collapse</h2>
+<p>If nutrient-sensing decides whether to maintain, proteostasis is much of what maintenance means. A cell’s proteins are continually synthesised, folded, put to work, damaged and replaced, and keeping that population correctly folded and the damaged fraction cleared is the task of the <strong>proteostasis network</strong>: the molecular chaperones that fold and refold, the heat-shock response that scales chaperone production to demand, and the two great degradation systems — the ubiquitin–proteasome system for tagged individual proteins and the autophagy–lysosome system for bulk material and aggregates. This network declines with age, and that decline is now among the better-mapped of all the cellular changes of ageing <span class="citation" data-cites="hipp2019">(<a href="../references.html#ref-hipp2019" role="doc-biblioref">Hipp et al., 2019</a>)</span>.</p>
+<p>When it fails, the consequences are structural. Misfolded and damaged proteins accumulate and aggregate, and the clinical face of that collapse is the great age-related proteinopathies: the amyloid and tau of Alzheimer’s disease, the α-synuclein of Parkinson’s, and others in which a specific protein, no longer cleared, forms toxic aggregates in a vulnerable tissue. What the most recent work adds is resolution and, with it, a change of ambition. Single-cell mapping shows the decline of one selective clearance route — chaperone-mediated autophagy, which picks out individual proteins for lysosomal destruction — proceeding tissue by tissue and even differently between the sexes, yet remaining inducible by exercise and fasting well into old age <span class="citation" data-cites="santiagofernandez2025">(<a href="../references.html#ref-santiagofernandez2025" role="doc-biblioref">Santiago-Fernández et al., 2025</a>)</span>; and in aged and Alzheimer’s-model mice, switching that route back on, pharmacologically or genetically, restores the synaptic proteome and normalises neuronal function <span class="citation" data-cites="khawaja2025">(<a href="../references.html#ref-khawaja2025" role="doc-biblioref">Khawaja et al., 2025</a>)</span>. Proteostasis decline is thus increasingly framed not as a fixed endpoint but as a target — a mechanism through which the cellular hallmarks become the diseases of old age, and one that can, at least in animals, be partly reversed.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="In depth — the three arms of the proteostasis network">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>In depth — the three arms of the proteostasis network
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The network has a logic worth keeping in view. <strong>Folding</strong> is handled by molecular chaperones (prominently the heat-shock proteins), which help nascent and stressed proteins reach their correct shape and are themselves regulated by the master transcription factor HSF-1; the capacity to induce this heat-shock response wanes with age. <strong>Tagged degradation</strong> runs through the ubiquitin–proteasome system, which marks individual proteins with ubiquitin for destruction in the proteasome. <strong>Bulk degradation</strong> runs through autophagy, which delivers proteins, aggregates and whole organelles to the lysosome — and which is the subject of the next section. When folding fails, degradation is the backstop; when degradation is overwhelmed, aggregates form. Ageing erodes all three arms at once, which is why proteostasis collapse is progressive and self-reinforcing rather than a single broken step <span class="citation" data-cites="hipp2019">(<a href="../references.html#ref-hipp2019" role="doc-biblioref">Hipp et al., 2019</a>)</span>. You need not hold the components in mind so much as the shape of the system: make correctly, or clear what is made wrongly, and do both less well with age.</p>
+</div>
+</div>
+</div>
+</section><section id="sec-autophagy" class="level2" data-number="5.4"><h2 data-number="5.4" class="anchored" data-anchor-id="sec-autophagy">
+<span class="header-section-number">5.4</span> Autophagy: the cell’s renewal</h2>
+<p>The third arm of the proteostasis network is important enough, and central enough to ageing, to take separately. <a href="../glossary.html#gloss-autophagy" class="gloss">Autophagy</a> — literally “self-eating” — is the process by which a cell encloses its own worn or surplus components and delivers them to the lysosome for breakdown and recycling. Its principal form, <a href="../glossary.html#gloss-macroautophagy" class="gloss">macroautophagy</a>, engulfs bulk cytoplasm and organelles; specialised forms include mitophagy, which culls damaged mitochondria, and chaperone-mediated autophagy, which selects individual proteins. Together they make autophagy the cell’s renewal system: not merely waste disposal but the controlled demolition that clears space for the new <span class="citation" data-cites="aman2021">(<a href="../references.html#ref-aman2021" role="doc-biblioref">Aman et al., 2021</a>)</span>.</p>
+<p>Autophagy is also where this chapter’s threads meet, because it is governed by the nutrient-sensing network of the first section. mTORC1 <em>suppresses</em> autophagy when nutrients are plentiful; AMPK and the sirtuins <em>induce</em> it when they are scarce. Feeding, in other words, switches renewal off, and fasting switches it on — which is the mechanistic heart of why eating less, and less often, is good for cells. With age, autophagic capacity declines, a failure judged important enough that disabled macroautophagy was named a distinct hallmark in 2023 <span class="citation" data-cites="lopezotin2023">(<a href="../references.html#ref-lopezotin2023" role="doc-biblioref">López-Otín et al., 2023</a>)</span>, and its decline feeds the others: aggregates go uncleared, damaged mitochondria persist, and cells slide more readily into senescence.</p>
+<p><a href="#fig-autophagy-fasting" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> develops the feeding–fasting logic in a simple simulation, contrasting a day of constant grazing with one of time-restricted eating, and showing why the <em>timing</em> of food, not only its quantity, governs how much renewal a cell achieves.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold"><summary>Show the simulation code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">dt</span> <span class="op">&lt;-</span> <span class="fl">0.1</span>; <span class="va">t</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">48</span>, by <span class="op">=</span> <span class="va">dt</span><span class="op">)</span></span>
+<span><span class="va">tau</span> <span class="op">&lt;-</span> <span class="fl">2.0</span>      <span class="co"># nutrient-signal decay (h)</span></span>
+<span><span class="va">tauA</span> <span class="op">&lt;-</span> <span class="fl">1.6</span>     <span class="co"># autophagy response lag (h)</span></span>
+<span></span>
+<span><span class="va">nutrient</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">t</span>, <span class="va">meals</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">N</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">numeric</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="kw">for</span> <span class="op">(</span><span class="va">m</span> <span class="kw">in</span> <span class="va">meals</span><span class="op">)</span> <span class="op">{</span> <span class="va">i</span> <span class="op">&lt;-</span> <span class="va">t</span> <span class="op">&gt;=</span> <span class="va">m</span>; <span class="va">N</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">N</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="op">(</span><span class="va">t</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">-</span> <span class="va">m</span><span class="op">)</span> <span class="op">/</span> <span class="va">tau</span><span class="op">)</span> <span class="op">}</span></span>
+<span>  <span class="va">N</span></span>
+<span><span class="op">}</span></span>
+<span><span class="va">mtor</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">N</span><span class="op">)</span> <span class="fl">1</span> <span class="op">/</span> <span class="op">(</span><span class="fl">1</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="op">(</span><span class="va">N</span> <span class="op">-</span> <span class="fl">0.6</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.15</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">autophagy</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">mt</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">A</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">numeric</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">mt</span><span class="op">)</span><span class="op">)</span>; <span class="va">A</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">1</span> <span class="op">-</span> <span class="va">mt</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span>
+<span>  <span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">mt</span><span class="op">)</span><span class="op">)</span> <span class="va">A</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">A</span><span class="op">[</span><span class="va">i</span> <span class="op">-</span> <span class="fl">1</span><span class="op">]</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">-</span> <span class="va">mt</span><span class="op">[</span><span class="va">i</span> <span class="op">-</span> <span class="fl">1</span><span class="op">]</span> <span class="op">-</span> <span class="va">A</span><span class="op">[</span><span class="va">i</span> <span class="op">-</span> <span class="fl">1</span><span class="op">]</span><span class="op">)</span> <span class="op">*</span> <span class="va">dt</span> <span class="op">/</span> <span class="va">tauA</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">pmax</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">pmin</a></span><span class="op">(</span><span class="fl">1</span>, <span class="va">A</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span><span class="va">build</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">meals</span>, <span class="va">label</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">mt</span> <span class="op">&lt;-</span> <span class="fu">mtor</span><span class="op">(</span><span class="fu">nutrient</span><span class="op">(</span><span class="va">t</span>, <span class="va">meals</span><span class="op">)</span><span class="op">)</span>; <span class="va">A</span> <span class="op">&lt;-</span> <span class="fu">autophagy</span><span class="op">(</span><span class="va">mt</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">rbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>t <span class="op">=</span> <span class="va">t</span>, value <span class="op">=</span> <span class="va">mt</span>, signal <span class="op">=</span> <span class="st">"mTORC1 activity"</span>, schedule <span class="op">=</span> <span class="va">label</span><span class="op">)</span>,</span>
+<span>        <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>t <span class="op">=</span> <span class="va">t</span>, value <span class="op">=</span> <span class="va">A</span>,  signal <span class="op">=</span> <span class="st">"Autophagic flux"</span>, schedule <span class="op">=</span> <span class="va">label</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="va">graze</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/vector.html">as.vector</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/outer.html">outer</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">13</span>, <span class="fl">16</span>, <span class="fl">19</span>, <span class="fl">22</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">24</span><span class="op">)</span>, <span class="st">"+"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">tre</span>   <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/vector.html">as.vector</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/outer.html">outer</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">12</span>, <span class="fl">16</span>, <span class="fl">20</span><span class="op">)</span>,            <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">24</span><span class="op">)</span>, <span class="st">"+"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">rbind</a></span><span class="op">(</span><span class="fu">build</span><span class="op">(</span><span class="va">graze</span>, <span class="st">"Grazing (6 meals/day)"</span><span class="op">)</span>,</span>
+<span>            <span class="fu">build</span><span class="op">(</span><span class="va">tre</span>,   <span class="st">"Time-restricted (8-h window)"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">means</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/aggregate.html">aggregate</a></span><span class="op">(</span><span class="va">value</span> <span class="op">~</span> <span class="va">schedule</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">df</span>, <span class="va">signal</span> <span class="op">==</span> <span class="st">"Autophagic flux"</span><span class="op">)</span>, FUN <span class="op">=</span> <span class="va">mean</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">t</span>, <span class="va">value</span>, colour <span class="op">=</span> <span class="va">signal</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span><span class="op">(</span>linewidth <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_hline</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">means</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="va">value</span><span class="op">)</span>, colour <span class="op">=</span> <span class="st">"#0F6E66"</span>,</span>
+<span>             linetype <span class="op">=</span> <span class="st">"dashed"</span>, linewidth <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">means</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">2</span>, y <span class="op">=</span> <span class="va">value</span> <span class="op">+</span> <span class="fl">0.06</span>,</span>
+<span>            label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span><span class="st">"mean autophagy = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">value</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>            colour <span class="op">=</span> <span class="st">"#0F6E66"</span>, hjust <span class="op">=</span> <span class="fl">0</span>, size <span class="op">=</span> <span class="fl">3</span>, inherit.aes <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_colour_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Autophagic flux"</span> <span class="op">=</span> <span class="st">"#0F6E66"</span>, <span class="st">"mTORC1 activity"</span> <span class="op">=</span> <span class="st">"#9A968C"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span><span class="op">(</span><span class="op">~</span><span class="va">schedule</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Time (hours over two days)"</span>, y <span class="op">=</span> <span class="st">"Relative activity"</span>, colour <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">11</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"top"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details><div class="cell-output-display">
+<div id="fig-autophagy-fasting" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-autophagy-fasting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="05-metabolism-proteostasis_files/figure-html/fig-autophagy-fasting-1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-autophagy-fasting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Autophagy follows the feeding clock, simulated. Each meal raises a nutrient signal that activates mTORC1 (grey), which suppresses autophagic flux (teal); between and after meals, as the signal decays, autophagy is released and rises with a lag. Under constant grazing (six meals across the waking day, left) mTORC1 rarely falls far enough for long enough, so autophagy stays low. Under time-restricted eating (the same food within an eight-hour window, right) the long daily fast lets autophagy climb and stay high, raising its time-averaged level (dashed line). The lesson is that <em>when</em> one eats, not only how much, sets how much cellular renewal occurs — the mechanistic rationale for the dietary strategies of Chapter 6.
+</figcaption></figure>
+</div>
+</div>
+</div>
+<p>This is why the pharmacology of the previous sections matters. The clearest autophagy inducers are the very agents that mimic fasting: rapamycin (by inhibiting mTORC1), metformin (by activating AMPK), the NAD⁺ precursors (through the sirtuins), and the dietary polyamine spermidine, which reproduces several effects of caloric restriction largely by enhancing autophagy <span class="citation" data-cites="madeo2018 vinten2025nad">(<a href="../references.html#ref-madeo2018" role="doc-biblioref">Madeo et al., 2018</a>; <a href="../references.html#ref-vinten2025nad" role="doc-biblioref">Vinten et al., 2025</a>)</span>. Indeed the case has been made that inducing autophagy could decelerate the biological clocks themselves, slowing ageing across many of its hallmarks at once <span class="citation" data-cites="kroemer2025">(<a href="../references.html#ref-kroemer2025" role="doc-biblioref">Kroemer et al., 2025</a>)</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Analogy — the night shift">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Analogy — the night shift
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Think of autophagy as a building’s renovation crew that can only work when the offices empty out. During the working day — when the cell is fed and mTORC1 is high — the corridors are too busy; the crew waits. Only in the quiet of the night, when AMPK and the sirtuins take over, do they move in to clear the broken furniture, replace failing wiring (damaged mitochondria) and haul away the rubbish (protein aggregates) before the next day begins. A cell that is fed around the clock is an office that never closes: the work of the day gets done, but the renovation never happens, and the building slowly degrades. Fasting is simply the act of sending everyone home so the crew can work.</p>
+</div>
+</div>
+<p>A final caution keeps this chapter honest. The promise of these pathways is real, but so is their double edge. mTOR is not only an accelerator of ageing but the engine of necessary growth, so its inhibition can impair wound healing and immune responses and disturb glucose handling; more autophagy is not invariably better. And the strength of the evidence varies sharply between agents: a recent meta-analysis across vertebrates found that rapamycin, like dietary restriction itself, reliably extends lifespan, whereas metformin — for all its mechanistic appeal — does not do so consistently in healthy animals <span class="citation" data-cites="ivimeycook2025">(<a href="../references.html#ref-ivimeycook2025" role="doc-biblioref">Ivimey-Cook et al., 2025</a>)</span>. The network is a genuine set of levers on ageing; which levers actually lengthen a healthy life, and at what cost, is the question the therapeutic chapters must now confront.</p>
+<div class="bridge">
+<p>We have reached the cell’s economy and found a single, conserved network at its centre — sensing food, choosing between growth and maintenance, and governing through autophagy and proteostasis the upkeep on which every other hallmark depends. We have seen that the surest laboratory interventions against ageing all converge on this network, that NAD⁺ links it to the failing mitochondria, and that its promise is everywhere shadowed by antagonistic trade-offs and by the gap between mouse and human evidence.</p>
+<p>That convergence is also a doorway. If a small set of nutrient sensors decides how fast cells age, then the most direct way to act on ageing is to act on what those sensors detect — food itself. Dietary restriction, fasting and the drugs designed to imitate them are the oldest, cheapest and most reproducible interventions in the entire field, and they open Part III. We turn from the machinery to the manipulation: from how the cell reads nutrients to what happens when we deliberately change the reading.</p>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-aman2021" class="csl-entry" role="listitem">
+Aman, Y., Schmauck-Medina, T., Hansen, M., et al. (2021). Autophagy in healthy aging and disease. <em>Nature Aging</em>, <em>1</em>(8), 634–650. <a href="https://doi.org/10.1038/s43587-021-00098-4">https://doi.org/10.1038/s43587-021-00098-4</a>
+</div>
+<div id="ref-covarrubias2021" class="csl-entry" role="listitem">
+Covarrubias, A. J., Perrone, R., Grozio, A., &amp; Verdin, E. (2021). <span>NAD+</span> metabolism and its roles in cellular processes during ageing. <em>Nature Reviews Molecular Cell Biology</em>, <em>22</em>(2), 119–141. <a href="https://doi.org/10.1038/s41580-020-00313-x">https://doi.org/10.1038/s41580-020-00313-x</a>
+</div>
+<div id="ref-damgaard2023" class="csl-entry" role="listitem">
+Damgaard, M. V., &amp; Treebak, J. T. (2023). What is really known about the effects of nicotinamide riboside supplementation in humans. <em>Science Advances</em>, <em>9</em>(29), eadi4862. <a href="https://doi.org/10.1126/sciadv.adi4862">https://doi.org/10.1126/sciadv.adi4862</a>
+</div>
+<div id="ref-harrison2009" class="csl-entry" role="listitem">
+Harrison, D. E., Strong, R., Sharp, Z. D., Nelson, J. F., Astle, C. M., Flurkey, K., Nadon, N. L., Wilkinson, J. E., Frenkel, K., Carter, C. S., Pahor, M., Javors, M. A., Fernandez, E., &amp; Miller, R. A. (2009). Rapamycin fed late in life extends lifespan in genetically heterogeneous mice. <em>Nature</em>, <em>460</em>(7253), 392–395. <a href="https://doi.org/10.1038/nature08221">https://doi.org/10.1038/nature08221</a>
+</div>
+<div id="ref-hipp2019" class="csl-entry" role="listitem">
+Hipp, M. S., Kasturi, P., &amp; Hartl, F. U. (2019). The proteostasis network and its decline in ageing. <em>Nature Reviews Molecular Cell Biology</em>, <em>20</em>(7), 421–435. <a href="https://doi.org/10.1038/s41580-019-0101-y">https://doi.org/10.1038/s41580-019-0101-y</a>
+</div>
+<div id="ref-ivimeycook2025" class="csl-entry" role="listitem">
+Ivimey-Cook, E. R., Sultanova, Z., et al. (2025). Rapamycin, not metformin, mirrors dietary restriction-driven lifespan extension in vertebrates: A meta-analysis. <em>Aging Cell</em>, <em>24</em>, e70131. <a href="https://doi.org/10.1111/acel.70131">https://doi.org/10.1111/acel.70131</a>
+</div>
+<div id="ref-kennedy2014" class="csl-entry" role="listitem">
+Kennedy, B. K., Berger, S. L., Brunet, A., Campisi, J., Cuervo, A. M., Epel, E. S., &amp; Sierra, F. (2014). Geroscience: Linking aging to chronic disease. <em>Cell</em>, <em>159</em>(4), 709–713. <a href="https://doi.org/10.1016/j.cell.2014.10.039">https://doi.org/10.1016/j.cell.2014.10.039</a>
+</div>
+<div id="ref-khawaja2025" class="csl-entry" role="listitem">
+Khawaja, R. R. et al. (2025). Chaperone-mediated autophagy regulates neuronal activity by sex-specific remodelling of the synaptic proteome. <em>Nature Cell Biology</em>, <em>27</em>(10), 1688–1707.
+</div>
+<div id="ref-kroemer2025" class="csl-entry" role="listitem">
+Kroemer, G., Maier, A. B., Cuervo, A. M., Gladyshev, V. N., Ferrucci, L., Gorbunova, V., Kennedy, B. K., Rando, T. A., Seluanov, A., Sierra, F., Verdin, E., &amp; López-Otín, C. (2025). From geroscience to precision geromedicine: Understanding and managing aging. <em>Cell</em>, <em>188</em>(8), 2043–2062. <a href="https://doi.org/10.1016/j.cell.2025.03.011">https://doi.org/10.1016/j.cell.2025.03.011</a>
+</div>
+<div id="ref-kulkarni2020" class="csl-entry" role="listitem">
+Kulkarni, A. S., Gubbi, S., &amp; Barzilai, N. (2020). Benefits of metformin in attenuating the hallmarks of aging. <em>Cell Metabolism</em>, <em>32</em>(1), 15–30. <a href="https://doi.org/10.1016/j.cmet.2020.04.001">https://doi.org/10.1016/j.cmet.2020.04.001</a>
+</div>
+<div id="ref-lin2026fromfat" class="csl-entry" role="listitem">
+Lin, H., Li, H., &amp; Tang, Q. (2026). From fat to fate: How aging adipose tissue drives systemic metabolic aging. <em>Biogerontology</em>, <em>27</em>(1), 30. <a href="https://doi.org/10.1007/s10522-025-10376-y">https://doi.org/10.1007/s10522-025-10376-y</a>
+</div>
+<div id="ref-lopezotin2023" class="csl-entry" role="listitem">
+López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., &amp; Kroemer, G. (2023). Hallmarks of aging: An expanding universe. <em>Cell</em>, <em>186</em>(2), 243–278. <a href="https://doi.org/10.1016/j.cell.2022.11.001">https://doi.org/10.1016/j.cell.2022.11.001</a>
+</div>
+<div id="ref-lopezotin2016" class="csl-entry" role="listitem">
+López-Otín, C., Galluzzi, L., Freije, J. M. P., Madeo, F., &amp; Kroemer, G. (2016). Metabolic control of longevity. <em>Cell</em>, <em>166</em>(4), 802–821. <a href="https://doi.org/10.1016/j.cell.2016.07.031">https://doi.org/10.1016/j.cell.2016.07.031</a>
+</div>
+<div id="ref-madeo2018" class="csl-entry" role="listitem">
+Madeo, F., Eisenberg, T., Pietrocola, F., &amp; Kroemer, G. (2018). Spermidine in health and disease. <em>Science</em>, <em>359</em>(6374), eaan2788. <a href="https://doi.org/10.1126/science.aan2788">https://doi.org/10.1126/science.aan2788</a>
+</div>
+<div id="ref-migaud2024" class="csl-entry" role="listitem">
+Migaud, M. E., Ziegler, M., &amp; Baur, J. A. (2024). Regulation of and challenges in targeting <span>NAD+</span> metabolism. <em>Nature Reviews Molecular Cell Biology</em>, <em>25</em>(10), 822–840. <a href="https://doi.org/10.1038/s41580-024-00752-w">https://doi.org/10.1038/s41580-024-00752-w</a>
+</div>
+<div id="ref-pearl2025" class="csl-entry" role="listitem">
+Moel, M., Harinath, G., Lee, V., Nyquist, A., Morgan, S. L., Isman, A., &amp; Zalzala, S. (2025). Influence of rapamycin on safety and healthspan metrics after one year: <span>PEARL</span> trial results. <em>Aging</em>, <em>17</em>. <a href="https://doi.org/10.18632/aging.206235">https://doi.org/10.18632/aging.206235</a>
+</div>
+<div id="ref-partridge2020" class="csl-entry" role="listitem">
+Partridge, L., Fuentealba, M., &amp; Kennedy, B. K. (2020). The quest to slow ageing through drug discovery. <em>Nature Reviews Drug Discovery</em>, <em>19</em>(8), 513–532. <a href="https://doi.org/10.1038/s41573-020-0067-7">https://doi.org/10.1038/s41573-020-0067-7</a>
+</div>
+<div id="ref-santiagofernandez2025" class="csl-entry" role="listitem">
+Santiago-Fernández, O., Coletto, L., Tasset, I., et al. (2025). Age-related decline of chaperone-mediated autophagy in skeletal muscle leads to progressive myopathy. <em>Nature Metabolism</em>, <em>7</em>(12), 2589–2611. <a href="https://doi.org/10.1038/s42255-025-01412-9">https://doi.org/10.1038/s42255-025-01412-9</a>
+</div>
+<div id="ref-sharma2026perox" class="csl-entry" role="listitem">
+Sharma, A. et al. (2026). Peroxisomes orchestrate metabolic flexibility and longevity via an interorganelle cascade. <em>Nature Aging</em>, <em>6</em>(5), 987–1006. <a href="https://doi.org/10.1038/s43587-026-01122-1">https://doi.org/10.1038/s43587-026-01122-1</a>
+</div>
+<div id="ref-tyshkovskiy2026" class="csl-entry" role="listitem">
+Tyshkovskiy, A., Kholdina, D., Davitadze, M., Molière, A., Moldakozhayev, A., Tongu, Y., Kasahara, T., Glubokov, D., Eames, A., Kats, L. M., Vladimirova, A., Ying, K., Liu, H., Zhang, B., Khasanova, U., Moqri, M., Van Raamsdonk, J. M., Harrison, D. E., Strong, R., … Gladyshev, V. N. (2026). Universal transcriptomic hallmarks of mammalian ageing and mortality. <em>Nature</em>. <a href="https://doi.org/10.1038/s41586-026-10542-3">https://doi.org/10.1038/s41586-026-10542-3</a>
+</div>
+<div id="ref-vinten2025nad" class="csl-entry" role="listitem">
+Vinten, K. T. et al. (2025). NAD+ precursor supplementation in human ageing: Clinical evidence and challenges. <em>Nature Metabolism</em>, <em>7</em>(10), 1974–1990. <a href="https://doi.org/10.1038/s42255-025-01387-7">https://doi.org/10.1038/s42255-025-01387-7</a>
+</div>
+<div id="ref-wang2025adip" class="csl-entry" role="listitem">
+Wang, G. et al. (2025). Adipose tissue ageing: Implications for metabolic health and lifespan. <em>Nature Reviews Endocrinology</em>, <em>21</em>(10), 623–637. <a href="https://doi.org/10.1038/s41574-025-01142-8">https://doi.org/10.1038/s41574-025-01142-8</a>
+</div>
+<div id="ref-willcox2008" class="csl-entry" role="listitem">
+Willcox, B. J., Donlon, T. A., He, Q., Chen, R., Grove, J. S., Yano, K., Masaki, K. H., Willcox, D. C., Rodriguez, B., &amp; Curb, J. D. (2008). <span>FOXO3A</span> genotype is strongly associated with human longevity. <em>Proceedings of the National Academy of Sciences</em>, <em>105</em>(37), 13987–13992. <a href="https://doi.org/10.1073/pnas.0801030105">https://doi.org/10.1073/pnas.0801030105</a>
+</div>
+<div id="ref-williams1957" class="csl-entry" role="listitem">
+Williams, G. C. (1957). Pleiotropy, natural selection, and the evolution of senescence. <em>Evolution</em>, <em>11</em>(4), 398–411. <a href="https://doi.org/10.2307/2406060">https://doi.org/10.2307/2406060</a>
+</div>
+</div>
+</section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
+<ol>
+<li id="fn1"><p>NR is sold principally as Tru Niagen (ChromaDex) and NMN under numerous competing brands; both reliably raise circulating NAD⁺ metabolites in humans but have not demonstrated robust clinical benefit on functional or disease endpoints in adequately powered trials <span class="citation" data-cites="damgaard2023 vinten2025nad">(<a href="../references.html#ref-damgaard2023" role="doc-biblioref">Damgaard &amp; Treebak, 2023</a>; <a href="../references.html#ref-vinten2025nad" role="doc-biblioref">Vinten et al., 2025</a>)</span>. The regulatory status of NMN is additionally contested: in 2022 the US Food and Drug Administration ruled that NMN cannot be classified as a dietary supplement because it was first authorised as an investigational drug — a question not fully resolved as of 2025 (<a href="https://www.fda.gov/food/cfsan-constituent-updates/fda-responds-citizen-petition-regarding-nmn" class="uri">https://www.fda.gov/food/cfsan-constituent-updates/fda-responds-citizen-petition-regarding-nmn</a>). Advertising claims for NAD⁺ precursor products have also been challenged by self-regulatory bodies (the US National Advertising Division) for insufficient substantiation.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/utilizas\.github\.io\/ageing\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../chapters/04-telomeres-senescence.html" class="pagination-link" aria-label="Telomeres, Cellular Senescence and Inflammageing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Telomeres, Cellular Senescence and Inflammageing</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/06-dietary-restriction.html" class="pagination-link" aria-label="Dietary Restriction and Its Mimetics">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Dietary Restriction and Its Mimetics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

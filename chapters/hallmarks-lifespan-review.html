@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The hallmarks across a lifespan — an interactive review</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Source+Sans+3:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap');
+
+  :root{
+    --paper:#FBFAF6; --ink:#23211C; --muted:#6B675E; --faint:#9A968C;
+    --line:rgba(35,33,28,.14); --teal:#0F6E66;
+    --c-low:#2E9C86; --c-rise:#C98A2E; --c-dys:#A6452A;
+    --font-display:'Fraunces',Georgia,serif;
+    --font-body:'Source Serif 4',Georgia,serif;
+    --font-ui:'Source Sans 3',system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#20242B; --ink:#D9D6CD; --muted:#A7A294; --faint:#7C786E;
+      --line:rgba(217,214,205,.16); --teal:#4FC4B8;
+      --c-low:#3FB89E; --c-rise:#D69A3E; --c-dys:#C2563A;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:transparent;font-family:var(--font-body);color:var(--ink);
+       line-height:1.6;-webkit-font-smoothing:antialiased}
+  .hl-fig{max-width:720px;margin:0 auto;padding:1.4rem 1.5rem 1.5rem;
+          background:var(--paper);border:1px solid var(--line);border-radius:10px}
+  .hl-fig h3{font-family:var(--font-display);font-weight:500;font-size:1.18rem;
+             margin:0 0 .15rem;letter-spacing:.1px;color:var(--ink)}
+  .hl-sub{font-family:var(--font-ui);font-size:.82rem;color:var(--muted);margin:0 0 1rem}
+  .hl-legend{display:flex;flex-wrap:wrap;gap:16px;font-family:var(--font-ui);
+             font-size:.8rem;color:var(--muted);margin-bottom:.5rem}
+  .hl-legend span{display:flex;align-items:center;gap:6px}
+  .chip{width:12px;height:12px;border-radius:3px;display:inline-block}
+  #hlWrap{margin:.2rem 0 .4rem}
+  svg{width:100%;height:auto;display:block}
+  .hl-controls{font-family:var(--font-ui);margin-top:.7rem}
+  .hl-row{display:flex;align-items:center;gap:12px;margin:.35rem 0}
+  .hl-row label{font-size:.85rem;color:var(--muted);min-width:158px}
+  .hl-row input[type=range]{flex:1;accent-color:var(--teal);height:4px}
+  .hl-out{font-size:.85rem;font-weight:500;min-width:70px;color:var(--ink)}
+  .hl-info{width:22px;height:22px;flex:none;border:1px solid var(--line);
+           border-radius:50%;background:transparent;color:var(--muted);
+           font-family:var(--font-body);font-style:italic;font-size:.8rem;
+           cursor:pointer;line-height:1;padding:0}
+  .hl-info:hover{color:var(--teal);border-color:var(--teal)}
+  .hl-infotext{font-size:.8rem;color:var(--muted);margin:.1rem 0 .5rem;
+               padding:.5rem .7rem;border-left:2px solid var(--teal);
+               background:color-mix(in srgb,var(--teal) 7%,transparent);border-radius:0 4px 4px 0}
+  .hl-infotext[hidden]{display:none}
+  .hl-read{font-family:var(--font-ui);font-size:.86rem;color:var(--ink);
+           margin-top:.7rem;padding-top:.7rem;border-top:1px solid var(--line)}
+  .hl-read b{font-weight:500}
+  .hl-cap{font-size:.84rem;color:var(--muted);margin-top:1rem;line-height:1.55}
+  .hl-cap b{font-weight:500;color:var(--ink)}
+</style>
+</head>
+<body>
+<figure class="hl-fig">
+  <h3>The hallmarks across a lifespan — a panoramic review</h3>
+  <p class="hl-sub">An interactive synthesis of Chapters 2–4. A heuristic, not measured data.</p>
+
+  <div class="hl-legend" aria-hidden="true">
+    <span><span class="chip" style="background:var(--c-low)"></span>low / protective</span>
+    <span><span class="chip" style="background:var(--c-rise)"></span>rising</span>
+    <span><span class="chip" style="background:var(--c-dys)"></span>dysfunctional</span>
+  </div>
+
+  <div id="hlWrap"></div>
+
+  <div class="hl-controls">
+    <div class="hl-row">
+      <label for="hlAge">Age playhead</label>
+      <input type="range" id="hlAge" min="20" max="110" value="62" step="1">
+      <span class="hl-out" id="hlAgeOut">62 years</span>
+      <button class="hl-info" type="button" data-target="hlInfoAge" aria-controls="hlInfoAge" aria-expanded="false" aria-label="What does the age control do?">i</button>
+    </div>
+    <p class="hl-infotext" id="hlInfoAge" hidden>Drag to move the vertical marker along the age axis. At each age the readout tallies how many hallmarks sit in their low/protective, rising or dysfunctional phase — a snapshot of the whole system at that point in life.</p>
+
+    <div class="hl-row">
+      <label for="hlThr">Dysfunction threshold</label>
+      <input type="range" id="hlThr" min="0.3" max="0.75" value="0.5" step="0.05">
+      <span class="hl-out" id="hlThrOut">0.50</span>
+      <button class="hl-info" type="button" data-target="hlInfoThr" aria-controls="hlInfoThr" aria-expanded="false" aria-label="What does the threshold control do?">i</button>
+    </div>
+    <p class="hl-infotext" id="hlInfoThr" hidden>Sets how high a hallmark's dysregulation must climb before it counts as &ldquo;dysfunctional&rdquo;. Raising the bar delays every crossing and narrows the shaded window; lowering it widens it — a reminder that the tipping window is partly a matter of where the line is drawn, not a fixed biological fact.</p>
+  </div>
+
+  <div class="hl-read" id="hlRead"></div>
+
+</figure>
+
+<script>
+(function(){
+  var H=[
+    {n:"Epigenetic alterations",o:45,k:.07,t:0},
+    {n:"Telomere attrition",o:50,k:.06,t:0},
+    {n:"Genomic instability",o:55,k:.07,t:0},
+    {n:"Loss of proteostasis",o:55,k:.08,t:0},
+    {n:"Disabled macroautophagy",o:52,k:.07,t:0},
+    {n:"Deregulated nutrient-sensing",o:50,k:.07,t:1},
+    {n:"Mitochondrial dysfunction",o:55,k:.07,t:1},
+    {n:"Cellular senescence",o:60,k:.08,t:1},
+    {n:"Stem-cell exhaustion",o:65,k:.09,t:2},
+    {n:"Altered intercellular comm.",o:64,k:.08,t:2},
+    {n:"Chronic inflammation",o:60,k:.08,t:2},
+    {n:"Dysbiosis",o:62,k:.07,t:2}
+  ];
+  var tiers=["Primary — causes of damage",
+             "Antagonistic — protective, then harmful",
+             "Integrative — culprits of the phenotype"];
+  var W=700,padL=196,padR=16,plotW=W-padL-padR;
+  function x(a){return padL+(a/110)*plotW;}
+  var FUI="font-family:var(--font-ui)";
+  var wrap=document.getElementById("hlWrap");
+  var ageIn=document.getElementById("hlAge"),thrIn=document.getElementById("hlThr");
+  var ageOut=document.getElementById("hlAgeOut"),thrOut=document.getElementById("hlThrOut");
+  var read=document.getElementById("hlRead");
+
+  function trans(h,thr){
+    var r=h.o-Math.log(0.8/0.2)/h.k, d=h.o+Math.log(thr/(1-thr))/h.k;
+    r=Math.max(0,Math.min(110,r)); d=Math.max(0,Math.min(110,d)); if(d<r)d=r;
+    return {r:r,d:d};
+  }
+  function render(){
+    var thr=parseFloat(thrIn.value), age=parseInt(ageIn.value,10);
+    ageOut.textContent=age+" years"; thrOut.textContent=thr.toFixed(2);
+    var T=H.map(function(h){return trans(h,thr);});
+    var rowH=16,rowGap=6,thH=18,blockGap=8,y=34,a;
+    var axis="";
+    for(a=0;a<=110;a+=20){
+      axis+='<line x1="'+x(a)+'" y1="26" x2="'+x(a)+'" y2="29" style="stroke:var(--faint)"/>'
+          +'<text x="'+x(a)+'" y="20" text-anchor="middle" font-size="11" style="fill:var(--faint);'+FUI+'">'+a+'</text>';
+    }
+    var body="";
+    tiers.forEach(function(tn,tIdx){
+      body+='<text x="0" y="'+(y+12)+'" font-size="11.5" style="fill:var(--muted);font-weight:500;'+FUI+'">'+tn+'</text>';
+      y+=thH;
+      H.forEach(function(h,i){ if(h.t!==tIdx)return; var tr=T[i];
+        var segs=[[0,tr.r,'var(--c-low)'],[tr.r,tr.d,'var(--c-rise)'],[tr.d,110,'var(--c-dys)']];
+        segs.forEach(function(s){var w=x(s[1])-x(s[0]); if(w>0.5)
+          body+='<rect x="'+x(s[0]).toFixed(1)+'" y="'+y+'" width="'+w.toFixed(1)+'" height="'+rowH+'" rx="2" style="fill:'+s[2]+'"/>';});
+        body+='<line x1="'+x(tr.d).toFixed(1)+'" y1="'+(y-1)+'" x2="'+x(tr.d).toFixed(1)+'" y2="'+(y+rowH+1)+'" style="stroke:var(--ink)" stroke-width="1"/>';
+        body+='<text x="'+(padL-10)+'" y="'+(y+12)+'" text-anchor="end" font-size="12" style="fill:var(--ink);'+FUI+'">'+h.n+'</text>';
+        y+=rowH+rowGap;
+      });
+      y+=blockGap;
+    });
+    var bTop=y+14, bH=56;
+    function countAt(a){var c=0; for(var j=0;j<T.length;j++) if(a>=T[j].d) c++; return c;}
+    var a3=null,a8=null;
+    for(a=0;a<=110;a++){var c=countAt(a); if(a3===null&&c>=3)a3=a; if(a8===null&&c>=8)a8=a;}
+    if(a8===null)a8=110;
+    var area='M '+x(0)+' '+(bTop+bH);
+    for(a=0;a<=110;a++){var cc=countAt(a); area+=' L '+x(a).toFixed(1)+' '+(bTop+bH-(cc/12)*bH).toFixed(1);}
+    var line=area; area+=' L '+x(110)+' '+(bTop+bH)+' Z';
+    var shade="";
+    if(a3!==null){
+      var xa=x(a3), xb=x(a8);
+      shade='<rect x="'+xa.toFixed(1)+'" y="30" width="'+(xb-xa).toFixed(1)+'" height="'+(bTop+bH-30).toFixed(1)+'" opacity="0.08" style="fill:var(--c-dys)"/>';
+      if(xb-xa>150)
+        shade+='<text x="'+((xa+xb)/2).toFixed(1)+'" y="40" text-anchor="middle" font-size="10.5" style="fill:var(--c-dys);'+FUI+'">correction-compatible window</text>';
+    }
+    var bot='<path d="'+area+'" opacity="0.16" style="fill:var(--c-dys)"/>'
+          +'<path d="'+line+'" fill="none" stroke-width="1.5" style="stroke:var(--c-dys)"/>'
+          +'<text x="'+(padL-10)+'" y="'+(bTop+bH/2+4)+'" text-anchor="end" font-size="12" style="fill:var(--ink);'+FUI+'">Dysfunctional count</text>';
+    for(a=0;a<=110;a+=20)
+      bot+='<text x="'+x(a)+'" y="'+(bTop+bH+16)+'" text-anchor="middle" font-size="11" style="fill:var(--faint);'+FUI+'">'+a+'</text>';
+    bot+='<text x="'+((padL+x(110))/2)+'" y="'+(bTop+bH+31)+'" text-anchor="middle" font-size="11" style="fill:var(--muted);'+FUI+'">Age (years)</text>';
+    var px=x(age);
+    var play='<line x1="'+px.toFixed(1)+'" y1="28" x2="'+px.toFixed(1)+'" y2="'+(bTop+bH)+'" stroke-width="1.5" stroke-dasharray="3 3" style="stroke:var(--ink)"/>'
+           +'<circle cx="'+px.toFixed(1)+'" cy="28" r="3" style="fill:var(--ink)"/>';
+    var totalH=bTop+bH+42;
+    wrap.innerHTML='<svg viewBox="0 0 '+W+' '+totalH+'" role="img" aria-label="Parallel lifespan timeline of the hallmarks of ageing, grouped by tier, with a dysfunctional-count track and a shaded correction-compatible window.">'+shade+axis+body+bot+play+'</svg>';
+    var low=0,rise=0,dys=0;
+    T.forEach(function(t){ if(age>=t.d)dys++; else if(age>=t.r)rise++; else low++; });
+    read.innerHTML='At age <b>'+age+'</b>: '+low+' low/protective &middot; '+rise+' rising &middot; '
+                 +'<span style="color:var(--c-dys)"><b>'+dys+' dysfunctional</b></span>.<br>'
+                 +'Correction-compatible window (3&nbsp;&rarr;&nbsp;8 hallmarks dysfunctional): ages <b>'+(a3==null?'\u2013':a3)+'\u2013'+a8+'</b>.';
+  }
+  ageIn.addEventListener("input",render);
+  thrIn.addEventListener("input",render);
+  Array.prototype.forEach.call(document.querySelectorAll(".hl-info"),function(btn){
+    btn.addEventListener("click",function(){
+      var tgt=document.getElementById(btn.getAttribute("data-target"));
+      var willOpen=tgt.hasAttribute("hidden");
+      if(willOpen){tgt.removeAttribute("hidden");}else{tgt.setAttribute("hidden","");}
+      btn.setAttribute("aria-expanded",willOpen?"true":"false");
+    });
+  });
+  render();
+})();
+</script>
+</body>
+</html>
