@@ -1,5 +1,9 @@
 # Reversible Ageing
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20745513.svg)](https://doi.org/10.5281/zenodo.20745513)
+[![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Read online](https://img.shields.io/badge/Read-online-5EC9CF.svg)](https://utilizas.github.io/ageing/)
+
 ### Targets, Therapies and the Dilemmas of Healthy Longevity
 
 **Miguel Moreno** · University of Granada
