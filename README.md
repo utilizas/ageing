@@ -48,7 +48,7 @@ This repository is shared for transparency and citability rather than as an open
   author    = {Moreno, Miguel},
   title     = {Reversible Ageing: Targets, Therapies and the Dilemmas of Healthy Longevity},
   year      = {2026},
-  month     = jun,
+  month     = {June},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.20745513},
   url       = {https://doi.org/10.5281/zenodo.20745513}
